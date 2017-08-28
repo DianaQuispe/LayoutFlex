@@ -23,7 +23,8 @@ img {
 }
 
 .container {
-    width: 1200px;
+    
+    width: 1000px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 14px;
@@ -74,6 +75,9 @@ a:hover {
     padding: 21px;
 
 
+}
+.conti {
+    display: flex;
 }
 
 .logo {
@@ -200,6 +204,8 @@ header {
 }
 
 .imagenes {
+    display: flex;
+    flex-wrap: wrap;
     width: 250px;
 }
 
