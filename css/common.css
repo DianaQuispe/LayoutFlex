@@ -2,7 +2,9 @@
  * Clases reutilizables para el proyecto
  * (Aquí pueden ir las clases de tu grid)
  */
-
+.flex-container{
+    display: flex;
+}
 .mb-0 {
   margin-bottom: 0;
 }
