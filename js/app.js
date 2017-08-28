@@ -1,7 +1,7 @@
 /*
  * Archivo principal de funcionalidad de JS
  */
- var o=0;
+var o=0;
 var row = document.getElementById("row");
 
 var images = ["assets/images/img-1.jpg", "assets/images/img-2.jpg", "assets/images/img-3.jpg", "assets/images/img-4.jpg", "assets/images/img-5.jpg", "assets/images/img-6.jpg", "assets/images/img-7.jpg", "assets/images/img-8.jpg", "assets/images/img-9.jpg"];
@@ -14,7 +14,7 @@ for (o = 0; o < images.length; o++) {
     crearIM.setAttribute("onclick", 'iMG('+ o.toString()+')');
     crearIM.style.cursor = "pointer";
     crearIM.setAttribute("class", "imagenes");
-        console.log(crearIM);
+    console.log(crearIM);
     var crearH2 = document.createElement("H2");
     var textoH2 = document.createTextNode("NOMBRE DEL PROYECTO")
     crearH2.appendChild(textoH2);
@@ -55,6 +55,6 @@ function borrar() {
     product.removeChild(product.firstChild);
 }
 function cambiar() {
-alert(o.toString().src);
+    alert(o.toString().src);
 
 }

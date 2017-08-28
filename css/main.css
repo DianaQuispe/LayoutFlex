@@ -1,46 +1,41 @@
 /*CLASES REUTILIZABLES*/
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.71429;
-  background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.71429;
+    background-color: #fff;
 }
 
 img {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 .container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 14px;
-  padding-right: 14px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .container:before, .container:after {
     content: " ";
-    display: table;
+    display: flex;
 }
 
 *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 .container:after {
@@ -48,87 +43,91 @@ img {
 }
 
 .mb-0 {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .mt-0 {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 .m-0 {
-  margin: 0px;
+    margin: 0px;
 }
 
 a {
-  color: #373B47;
-  text-decoration: none;
+    color: #373B47;
+    text-decoration: none;
 }
 a:hover {
-  color: #E95853;
+    color: #E95853;
 }
 
 .text-uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .link {
-  font-weight: 700;
-  padding: 21px;
-  display: inline-block;
+    font-weight: 700;
+    padding: 21px;
+    display: inline-flex;
 }
 
 .logo {
-  float: right;
+    float: right;
 }
 
 header {
-  position: fixed;
-  background: white;
-  width: 100%;
-  top: 0;
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
 }
 
-.menu {
-  padding: 14px 70px;
-  overflow: auto;
-}
+.menu  {
+    padding: 14px 70px;
+    height: 80px;
+    overflow: auto;
 
+}
 #home {
-  background-image: url(../assets/images/bg-home.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 554px;
-  text-align: center;
-  margin-top: 80px;
+    background-image: url(../assets/images/bg-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 554px;
+    text-align: center;
+    margin-top: 80px;
 }
 
 #home .container{
-  color: white;
-  padding: 70px;
+    color: white;
+    padding: 70px;
 }
 
 .text-home {
-  font-size: 53px;
+    font-size: 53px;
 }
 
 .btn-home {
-  background: #2ECC71;
-  color: #fff;
-  padding: 11px 20px;
-  border-radius: 1px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-top: 63px;
-  display: inline-block;
-  font-size: 14px;
+    position: relative;
+    top: 120px;
+    background: #2ECC71;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 63px;
+    font-size: 14px;
+
+
 }
 
 #services {
-  background-color: #F17C72;
-  text-align: center;
-  color: #fff;
-  padding: 70px 7px;
+    background-color: #F17C72;
+    text-align: center;
+    color: #fff;
+    padding: 70px 7px;
 }
 #divG {
     position: fixed;
@@ -147,20 +146,26 @@ header {
     width: 50%;
 }
 #work {
-  background-color: white;
-  text-align: center;
-  color: #373B47;
-  padding: 70px 7px;
+    background-color: white;
+    text-align: center;
+    color: #373B47;
+    padding: 70px 7px;
+}
+.boxes {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
 }
 .box-services {
-  display: inline-block;
-  width: 30%;
-  margin-top: 63px;
+    width: 30%;
+    margin-top: 63px;
+
 }
 
 .text-services {
-  font-size: 35px;
-  letter-spacing: 2px;
+    font-size: 35px;
+    letter-spacing: 2px;
 }
 .image{
     width: 98%;
@@ -168,9 +173,7 @@ header {
     margin: 1%;
     left: 0;
     z-index: 1;
-     -moz-transition: opacity 2s;
-            -webkit-transition: opacity 2s;
-            transition: opacity 2s;
+    transition: opacity 2s;
 }
 .span {
     z-index: 0;
@@ -199,9 +202,9 @@ header {
 }
 
 footer {
-  text-align: center;
-  height: 70px;
-  background: #373B47;
-  color: white;
-  padding-top: 7px;
+    text-align: center;
+    height: 70px;
+    background: #373B47;
+    color: white;
+    padding-top: 7px;
 }
