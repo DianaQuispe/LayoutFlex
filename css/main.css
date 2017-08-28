@@ -28,6 +28,7 @@ img {
     margin-left: auto;
     padding-left: 14px;
     padding-right: 14px;
+    overflow: visible;
 }
 
 .container:before, .container:after {
@@ -67,9 +68,12 @@ a:hover {
 }
 
 .link {
+    position: relative;
+    top: 20px;
     font-weight: 700;
     padding: 21px;
-    display: inline-flex;
+
+
 }
 
 .logo {
@@ -84,10 +88,7 @@ header {
 }
 
 .menu  {
-    padding: 14px 70px;
-    height: 80px;
-    overflow: auto;
-
+    padding: 0px 70px;
 }
 #home {
     background-image: url(../assets/images/bg-home.jpg);
@@ -109,17 +110,19 @@ header {
 }
 
 .btn-home {
-    position: relative;
-    top: 120px;
+    top: 110px;
+    display: flex;
+    right: 550px;
+    width: 150px;
     background: #2ECC71;
     color: #fff;
     padding: 11px 20px;
     border-radius: 1px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-top: 63px;
+    margin-top: 100px;
+    margin-left: 463px;
     font-size: 14px;
-
 
 }
 
@@ -160,7 +163,6 @@ header {
 .box-services {
     width: 30%;
     margin-top: 63px;
-
 }
 
 .text-services {
